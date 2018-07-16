@@ -1,0 +1,19 @@
+{{ define "login" }}
+
+{{ template "header" }}
+
+  <div class="jumbotron" style="margin-bottom: 0">
+    <form class="form-signin col-4 offset-4" role="form" method="POST" action="/goLogin">
+      <div class="form-label-group my-sm-3">
+        <input name="login" type="text" id="inputLogin" class="form-control" placeholder="Логин" required autofocus>
+      </div>
+      <div class="form-label-group my-sm-3">
+        <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Пароль" required>
+      </div>
+      <button class="btn btn-lg btn-success btn-block my-sm-3" type="submit">Вход</button>
+    </form>
+  </div>
+
+{{ template "footer" }}
+
+{{ end }}
